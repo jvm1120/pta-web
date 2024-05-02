@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ | Point to Another</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Point to Another</h1>
+
+    <p style="text-align: center; margin: 40px auto">
+        お気軽にお問い合わせください。
+    </p>
+    <section class="form_section">
+    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc-eXChkv31rRZzhJEhl--aPYU43uSZDnLGFpK43eNc4NWgkA/formResponse" method="POST" id="your-form-id">
+        <label for="entry.382089609" class="lavel">お名前(必須):</label>
+        <input type="text" name="entry.382089609" id="entry.382089609" class="text_box"     required="required"
+        >
+        <label for="entry.1306160560" class="lavel">mail(必須):</label>
+        <input type="text" name="entry.1306160560" id="entry.1306160560" class="text_box"     required="required"
+        >
+        <label for="entry.440663791" class="lavel">お問い合わせ内容:</label>
+        <textarea name="entry.440663791" id="entry.440663791" class="area_box"></textarea>
+        <button type="submit" class="submit_button">送 信</button>
+    </form>
+    </section>
+    <p><a href="index.html">＞ トップページ ＜</a></p>
+    <p><a href="form.html">＞ お問い合わせ ＜</a></p>
+    <p><a href="https://line.me/ti/p/mDFogPcFTe">＞ LINE追加 ＜</a></p>
+    <p>mail : flowercord@gmail.com</p>
+    <p><a href="tel:09074576536">Tel : 090-7457-6536</a></p>
+    <p class="address_txt">〒8900045 鹿児島県鹿児島市武2-46-1-101</p>
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+          var form = document.getElementById('your-form-id');
+          if (form) {
+            form.addEventListener('submit', function(event) {
+              event.preventDefault();
+              var url = 'https://jvm1120.github.io/jvm12.github.io/'; // リダイレクト先のURL
+              window.location.href = url;
+            });
+          }
+        });
+      </script>
+</body>
+</html>
